@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cocoy.burritoapp.Activities.PurchaseActivity">
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="368dp"
+        android:layout_height="93dp"
+        android:text="$0.00"
+        android:textSize="60sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#007f00"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_name"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="189dp"
+        android:layout_marginStart="8dp">
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:hint="Nombre" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_place"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="187dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp">
+
+        <EditText
+            android:id="@+id/input_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:hint="Ubicacion"
+            tools:layout_editor_absoluteX="10dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvNoItems"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="112dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageButton
+        android:id="@+id/ibMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/minus_icon"
+        android:tint="@color/icons"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintRight_toLeftOf="@+id/tvNoItems"
+        android:layout_marginRight="8dp"
+        app:layout_constraintTop_toTopOf="@+id/tvNoItems"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNoItems"
+        android:layout_marginEnd="8dp" />
+
+    <ImageButton
+        android:id="@+id/ibPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/plus_icon"
+        android:tint="@color/icons"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintLeft_toRightOf="@+id/tvNoItems"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="@+id/tvNoItems"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNoItems"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/bHacerCompra"
+        android:layout_width="88dp"
+        android:layout_height="81dp"
+        android:background="@mipmap/basket_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+
+</android.support.constraint.ConstraintLayout>
