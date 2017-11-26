@@ -48,10 +48,10 @@ public class CategoryActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
         ArrayList<Category> categories = new ArrayList<Category>();
-        categories.add(new Category("Calientes", R.mipmap.donut_icon));
-        categories.add(new Category("Postres", R.mipmap.pretzel_icon));
-        categories.add(new Category("Frios", R.mipmap.sandwich_icon));
-        categories.add(new Category("Bebidas", R.mipmap.tea_icon));
+        categories.add(new Category("Libros", R.mipmap.book_icon));
+        categories.add(new Category("Tareas", R.mipmap.hw_icon));
+        categories.add(new Category("Exámenes", R.mipmap.exam_icon));
+        categories.add(new Category("Apuntes", R.mipmap.notes_icon));
 
 
         // TODO: 13.- Ingresamos a nuestro adaptador un nuevo listener para poder saber el elemento al que se le dio click

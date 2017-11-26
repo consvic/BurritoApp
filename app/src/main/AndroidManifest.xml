@@ -21,9 +21,21 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.cocoy.burritoapp.Activities.MainActivity" />
         </activity>
-        <activity android:name=".Activities.ItemsActivity" />
-        <activity android:name=".Activities.PurchaseActivity" />
-        <activity android:name=".Activities.PromotionsActivity"></activity>
+        <activity android:name=".Activities.ItemsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cocoy.burritoapp.Activities.CategoryActivity" />
+        </activity>
+        <activity android:name=".Activities.PurchaseActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cocoy.burritoapp.Activities.ItemsActivity" />
+        </activity>
+        <activity android:name=".Activities.PromotionsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cocoy.burritoapp.Activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
