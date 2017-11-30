@@ -37,5 +37,4 @@
                 android:value="com.example.cocoy.burritoapp.Activities.MainActivity" />
         </activity>
     </application>
-
 </manifest>
