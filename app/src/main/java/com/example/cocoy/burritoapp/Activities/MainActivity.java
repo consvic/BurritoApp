@@ -6,10 +6,16 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.cocoy.burritoapp.Adapters.MyImageAdapter;
+import com.example.cocoy.burritoapp.LoginActivity;
 import com.example.cocoy.burritoapp.R;
+import com.example.cocoy.burritoapp.SignupActivity;
 
 import java.util.ArrayList;
 import java.util.Timer;
@@ -61,6 +67,27 @@ public class MainActivity extends AppCompatActivity {
         init();
 
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+
+        inflater.inflate(R.menu.optionsmenu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.mSearch:
+               // Toast.makeText(this, "You Clicked " + item.getItemId(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
+                // do whatever
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     private void init() {

@@ -36,6 +36,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.cocoy.burritoapp.Activities.MainActivity" />
         </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".MainFragment"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

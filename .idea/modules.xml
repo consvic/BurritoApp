@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BurritoApp.iml" filepath="$PROJECT_DIR$/BurritoApp.iml" />
+      <module fileurl="file://C:\Users\pacod\AndroidStudioProjects\BurritoApp\BurritoApp.iml" filepath="C:\Users\pacod\AndroidStudioProjects\BurritoApp\BurritoApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\pacod\AndroidStudioProjects\BurritoApp\app\app.iml" filepath="C:\Users\pacod\AndroidStudioProjects\BurritoApp\app\app.iml" />
     </modules>
   </component>
 </project>
