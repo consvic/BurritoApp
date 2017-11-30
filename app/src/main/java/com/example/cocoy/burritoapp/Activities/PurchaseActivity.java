@@ -26,6 +26,7 @@ public class PurchaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_purchase);
 
+        getSupportActionBar().setTitle("ShopMart");
         Intent intent = getIntent();
         product = intent.getStringExtra("product");
         price = intent.getIntExtra("price",0);

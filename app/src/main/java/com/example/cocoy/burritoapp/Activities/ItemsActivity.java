@@ -28,6 +28,7 @@ public class ItemsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items);
 
+        getSupportActionBar().setTitle("ShopMart");
         recyclerView = (RecyclerView) findViewById(R.id.recyclerViewItems);
         recyclerView.setHasFixedSize(true);
         /*

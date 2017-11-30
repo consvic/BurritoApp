@@ -42,11 +42,8 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         ButterKnife.bind(this);
+        getSupportActionBar().setTitle("Signup");
         final Spinner spinner = (Spinner) findViewById(R.id.spinner);
-
-
-
-
         /*
         *    Textview
         * */

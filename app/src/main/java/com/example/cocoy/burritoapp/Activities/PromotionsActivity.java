@@ -30,6 +30,7 @@ public class PromotionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_promotions);
 
+        getSupportActionBar().setTitle("Promotions");
         recyclerView = (RecyclerView) findViewById(R.id.recyclerViewPromotions);
         recyclerView.setHasFixedSize(true);
         /*

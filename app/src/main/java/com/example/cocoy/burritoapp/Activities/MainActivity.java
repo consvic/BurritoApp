@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         cardCategories = (CardView) findViewById(R.id.cardCategories);
         cardPromos = (CardView) findViewById(R.id.cardPromos);
         cardQR = (CardView) findViewById(R.id.cardQR);
-
+        getSupportActionBar().setTitle("ShopMart");
         cardPromos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
